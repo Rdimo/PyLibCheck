@@ -10,7 +10,7 @@ setup(
     author_email="<contact.rdimo@gmail.com>",
     description="Simple library to check if packages are installed and install them for you",
     long_description_content_type="text/markdown",
-    long_description=open("README.md").read(),
+    long_description=open("README.md", encoding="utf-8").read(),
     url = "https://github.com/rdimo/pylibcheck",
     project_urls={
       "Bug Tracker": "https://github.com/rdimo/pylibcheck/issues",

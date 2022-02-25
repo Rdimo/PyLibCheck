@@ -3,8 +3,6 @@ import subprocess
 import pkg_resources
 from pathlib import Path
 
-__name__ = "PyLibCheck"
-__version__ = "1.0.0"
 __python__ = Path(sys.executable).resolve()
 
 class invalidType(Exception): ...
