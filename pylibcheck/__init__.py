@@ -8,7 +8,6 @@ __python__ = Path(sys.executable).resolve()
 class invalidType(Exception): ...
 class invalidVer(Exception): ...
 
-
 def checkPackage(package: list or tuple or str) -> bool:
     """Check if a package is installed
 
