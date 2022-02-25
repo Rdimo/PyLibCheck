@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 __name__ = "pylibcheck"
-__version__ = "0.0.1"
+__version__ = "0.2.1"
 
 setup(
     name=__name__,
