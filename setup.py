@@ -1,24 +1,26 @@
-from setuptools import setup
- 
-classifiers = [
-  "Development Status :: 5 - Production/Stable",
-  "Intended Audience :: Education",
-  "Operating System :: Microsoft :: Windows :: Windows 10",
-  "License :: OSI Approved :: MIT License",
-  "Programming Language :: Python :: 3.9"
-]
- 
+from setuptools import setup, find_packages
+
+__name__ = "pylibcheck"
+__version__ = "0.0.1"
+
 setup(
-  name = "pylibcheck",
-  version = "0.0.1",
-  description = "check if a pip module is installed",
-  long_description = open("README.md").read(),
-  long_description_content_type = "text/markdown",
-  url = "https://github.com/rdimo/pylibcheck",  
-  author = "Rdimo",
-  author_email = "contact.rdimo@gmail.com",
-  license = "MIT", 
-  keywords = "pylibcheck", 
-  classifiers = classifiers,
-  packages = ["pylibcheck"]
+    name=__name__,
+    version=__version__,
+    author="Rdimo",
+    author_email="<contact.rdimo@gmail.com>",
+    description="Simple library to check if packages are installed and install them for you",
+    long_description_content_type="text/markdown",
+    long_description=open("README.md").read(),
+    url = "https://github.com/rdimo/pylibcheck",
+    project_urls={
+      "Bug Tracker": "https://github.com/rdimo/pylibcheck/issues",
+    },
+    packages=find_packages(),
+    keywords=['pylibcheck', 'python', 'package', 'library', 'lib', 'module', 'checker'],
+    classifiers=[
+      "Intended Audience :: Developers",
+      "Programming Language :: Python :: 3",
+      "License :: OSI Approved :: MIT License",
+      "Operating System :: OS Independent",
+    ]
 )
