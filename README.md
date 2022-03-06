@@ -15,7 +15,7 @@ Example of how you can use [pylibcheck](https://pypi.org/project/pylibcheck/)
 ```py
 import pylibcheck, time
 
-if pylibcheck.checkPackage("pyinstaller") == False:
+if not pylibcheck.checkPackage("pyinstaller"):
     print("pyinstaller is not installed!")
     time.sleep(1)
     print("installing it for you!")
